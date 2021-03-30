@@ -1,0 +1,31 @@
+.header {
+  background: $colorWhite;
+
+  &__top {
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phone {
+    color: $primary;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__phone:hover {
+    color: $primary
+  }
+
+  &__menu {
+    padding: 20px 0;
+  }
+  
+  &__items {
+    justify-content: space-around;
+  }
+
+}

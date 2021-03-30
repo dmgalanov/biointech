@@ -1,0 +1,45 @@
+.footer {
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    flex-grow: 2;
+    width-max: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__items {
+    justify-content: space-between;
+    padding: 0;
+    margin-max: 50px;
+  }
+
+  &__contacts {
+    margin-left: 150px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  &__logo {
+    padding-top: 35px;
+  }
+
+  .contacts {
+    &__phone {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 140%;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+}
