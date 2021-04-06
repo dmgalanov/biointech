@@ -11,7 +11,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="footer__logo" href="/"><img src="../assets/images/icons/logo_footer.svg" alt="logo"></a>
+                <a class="footer__logo menu-nav" href="/"><img src="../assets/images/icons/logo_footer.svg" alt="logo"></a>
             </div>
             <div class="footer__contacts contacts">
                 <p class="contacts__phone">Тел.: +7 999 999 99 99</p>

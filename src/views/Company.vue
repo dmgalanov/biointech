@@ -1,15 +1,20 @@
 <template>
   <MainContainer>
-    <h1>This is an about page</h1>
+    <div>
+      <Navigation />
+      <router-view/>
+    </div>
   </MainContainer>
 </template>
 
 <script>
   import MainContainer from "../components/MainContainer";
+  import Navigation from "./navigation/Navigation";
   export default{
     name: 'Company',
     components: {
       MainContainer,
+      Navigation,
     },
   }
 </script>
