@@ -1,10 +1,10 @@
 <template>
-    
+    <div>afw</div>
 </template>
 
 <script>
     export default {
-        name: "History"
+        name: "Information"
     }
 </script>
 
