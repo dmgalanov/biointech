@@ -8,7 +8,6 @@
         проекта Bigor Biotechnology LLC во главе Щеблыкина Игоря Николаевича.</p>
     <p class="navigation-container-right-text">Все три компании являются ключевым звеном создания новшеств в
         пищевой и кормовой промышленности.</p>
-    <p></p>
 </template>
 
 <script>

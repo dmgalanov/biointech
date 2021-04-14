@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__top">
                 <a class="header__logo" href="/"><img src="../assets/images/icons/logo.svg" alt="logo"></a>
-                <a class="header__phone primary menu-nav" href="/contacts"><img src="../assets/images/icons/phone.svg" alt="phone">+7 999 999 99 99</a>
+                <a class="header__phone primary menu-nav" href="/contacts"><img src="../assets/images/icons/phone.svg" alt="phone">+7 953 181 23 43</a>
             </div>
         </div>
         <div class="header__bg-color bg-color">
