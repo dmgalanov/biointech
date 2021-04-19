@@ -40,25 +40,37 @@ body {
       &:hover {
         background-size:100% 2px;
       }
-      &:active {
-        background-size:100% 2px;
-      }
     }
   }
 
   .button {
-    width: 310px;
-    &__container{
-      height: 90px;
-      border-radius: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $colorWhite;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 26px;
-      line-height: 100%;
+    width: 280px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorWhite;
+    background-color: $bgColor;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 3px;
+
+    .button-text {
+      background:linear-gradient($colorWhite, $colorWhite) 50% 100% no-repeat;
+      background-size:0 2px;
+      transition:background 250ms ease 0s;
+
+    }
+
+    &:hover .button-text {
+      background-size:100% 2px;
+
     }
   }
 

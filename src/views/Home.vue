@@ -3,7 +3,7 @@
     <section class="block-one">
       <MainContainer>
         <h1 class="block-one__title">Высококлассное<br>промышленное<br>оборудование</h1>
-        <div class="block-one__button button"><a href="/products"><span class="button__container">Каталог</span></a></div>
+        <a href="/products" class="block-one__button button"><span class="button__text button-text">Каталог</span></a>
       </MainContainer>
     </section>
     <section class="block-two">
@@ -12,7 +12,7 @@
           <div class="block-two__info">
             <h3 class="block-two__title">ООО«БиоИнтех»</h3>
             <p class="block-two__text">Ведущие компании доверяют нам задачи по<br>поставки промышленного оборудования и его<br>установки. Надежные технологии резки, гибкие<br>пакеты услуг и интеллектуальные программные<br>решения позволяют нам устанавливать стандарты<br>во всем мире.</p>
-            <div class="block-two__button button"><a href="/services"><span class="button__container">О продукции</span></a></div>
+            <a href="/services" class="block-two__button button"><span class="button__text button-text">Услуги</span></a>
           </div>
           <div class="block-two__image">
             <img src="../assets/images/block-two__image.png" alt="">
@@ -50,7 +50,7 @@
                   :carousel_data="sliderItems"
           />
         </div>
-        <a href="/products" class="block-four__lookAll">Смотреть все</a>
+        <a href="/products" class="block-four__look-all">Смотреть все</a>
       </MainContainer>
     </section>
   </div>

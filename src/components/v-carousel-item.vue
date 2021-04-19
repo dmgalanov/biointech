@@ -10,12 +10,12 @@
         props: {
             item_data: {
                 type: Object,
-                default: () => {}
+                default: () => {},
             }
         }
     }
 </script>
 
-<style scoped>
+<style lang="scss">
 
 </style>

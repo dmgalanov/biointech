@@ -7,7 +7,7 @@
   }
 
   &__nav {
-    flex-grow: 2;
+    flex-basis: 62%;
     width-max: 100%;
     display: flex;
     flex-direction: column;
@@ -19,10 +19,9 @@
   }
 
   &__contacts {
-    margin-left: 150px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.05em;
   }
@@ -34,11 +33,11 @@
   .contacts {
     &__phone {
       font-weight: 600;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 140%;
     }
     p {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 

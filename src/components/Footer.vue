@@ -13,7 +13,7 @@
                 </div>
                 <a class="footer__logo menu-nav" href="/"><img src="../assets/images/icons/logo_footer.svg" alt="logo"></a>
             </div>
-            <div class="footer__contacts contacts">
+            <div class="footer__contacts footer-contacts">
                 <p class="contacts__phone">Тел.: +7 953 181 23 43</p>
                 <p class="contacts__email">Email: 89531812343@mail.ru</p>
                 <p class="contacts__address">Адрес: г.Ефремов, ул. Заводская, д 11, оф 1</p>
