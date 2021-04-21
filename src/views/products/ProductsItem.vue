@@ -1,14 +1,20 @@
 <template>
     <div class="products-item">
+
+        <popup
+                v-if="isFormPopupVisible"
+                @closePopup="closeFormPopup"
+        />
+
         <h4 class="products-item__title">{{product_data.title}}</h4>
         <img class="products-item__image" v-bind:src=" require('../../assets/images/product-image/' + product_data.image) " alt="img">
         <p class="products-item__text">{{product_data.text}}</p>
-        <a href="/products" class="products-item__button products-item-button" @click="sendDataToParent"><span class="products-item-button__text products-item-button-text">Заказать звонок</span></a>
+        <button class="products-item__button products-item-button" @click="showPopup"><span class="products-item-button__text products-item-button-text">Заказать звонок</span></button>
     </div>
 </template>
 
 <script>
-
+    import Popup from "../../components/popup/popup";
     export default {
         name: "ProductsItem",
         props: {
@@ -19,10 +25,21 @@
                 }
             }
         },
-        methods: {
-            sendDataToParent() {
-                this.$emit('sendArticle', this.product_data.article)
+        data() {
+            return {
+                isFormPopupVisible: false
             }
+        },
+        methods: {
+            showPopup() {
+                this.isFormPopupVisible = true;
+            },
+            closeFormPopup() {
+                this.isFormPopupVisible = false;
+            },
+        },
+        components: {
+            Popup,
         }
     }
 </script>
@@ -43,7 +60,7 @@
             width: 300px;
         }
         &__title {
-            font-size: 28px;
+            font-size: 18px;
             text-transform: uppercase;
             text-align: center;
         }
@@ -57,7 +74,8 @@
     .products-item-button {
         width: 280px;
         height: 60px;
-        position: relative;
+        margin: 40px 0;
+        border: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -66,22 +84,21 @@
         text-decoration: none;
         overflow: hidden;
         border-radius: 20px;
+        letter-spacing: 2px;
         font-style: normal;
         font-weight: 600;
         font-size: 22px;
         line-height: 100%;
-        letter-spacing: 3px;
+        box-shadow: 0 2px 0 #303555;
+        transition: background-color 0.5s ease 0s;
+        top: 0;
 
-        .products-item-button-text {
-            background:linear-gradient(#FFFFFF, #FFFFFF) 50% 100% no-repeat;
-            background-size:0 2px;
-            transition:background 250ms ease 0s;
-
+        &:hover {
+            background-color: #5f68aa;
         }
-
-        &:hover .products-item-button-text {
-            background-size:100% 2px;
-
+        &:active {
+            top: 3px;
+            box-shadow: 0 0 0 #303555;
         }
     }
 </style>

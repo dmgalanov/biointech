@@ -14,34 +14,21 @@
                 <li class="services__item">Составляем и передаем полный комплект исполнительной документации.</li>
             </ul>
         </div>
-        <div class="block-four__carousel">
-            <v-carousel
-                    :carousel_data="sliderItems"
-            />
+        <div class="services__carousel">
+            <SwiperSlider />
         </div>
     </MainContainer>
 </template>
 
 <script>
     import MainContainer from "../components/MainContainer";
-    import vCarousel from '../components/v-carousel'
+    import SwiperSlider from "../components/SwiperSlider";
     export default{
         name: 'Services',
         components: {
             MainContainer,
-            vCarousel,
+            SwiperSlider,
         },
-        data() {
-            return {
-                sliderItems: [
-                    {id:1, name: 'img1', img: '1.png'},
-                    {id:2, name: 'img2', img: '2.png'},
-                    {id:3, name: 'img3', img: '3.png'},
-                    {id:4, name: 'img4', img: '4.png'},
-                    {id:5, name: 'img5', img: '5.png'}
-                ]
-            }
-        }
     }
 </script>
 
@@ -86,6 +73,16 @@
                 top: 7px;
                 left: 0;
             }
+        }
+
+        &__carousel {
+            max-height: 500px;
+            width: 900px;
+            margin: 50px auto;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 </style>

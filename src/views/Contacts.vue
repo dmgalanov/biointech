@@ -76,6 +76,8 @@
     .contacts-button {
         width: 280px;
         height: 60px;
+        margin: 40px 0;
+        border: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,25 +86,21 @@
         text-decoration: none;
         overflow: hidden;
         border-radius: 20px;
+        letter-spacing: 2px;
         font-style: normal;
         font-weight: 600;
         font-size: 22px;
         line-height: 100%;
-        letter-spacing: 3px;
-        margin-top: 50px;
-        border: none;
-        box-shadow: 0 0 8px 0 #818CEB;
+        box-shadow: 0 2px 0 #303555;
+        transition: background-color 0.5s ease 0s;
+        top: 0;
 
-        .contacts-button-text {
-            background:linear-gradient(#FFFFFF, #FFFFFF) 50% 100% no-repeat;
-            background-size:0 2px;
-            transition:background 250ms ease 0s;
-
+        &:hover {
+            background-color: #5f68aa;
         }
-
-        &:hover .contacts-button-text {
-            background-size:100% 2px;
-
+        &:active {
+            top: 3px;
+            box-shadow: 0 0 0 #303555;
         }
     }
 

@@ -10,9 +10,9 @@
                 и срок службы технологического оборудования Заказчика.</p>
             <div class="company__line"></div>
             <div class="company__block-one">
-                <h3 class="company__block-one-title company__paragraph-title">История создания и развития компании</h3>
                 <div class="company__wrapper">
                     <div class="company__paragraph">
+                        <h3 class="company__block-one-title company__paragraph-title">История создания и развития компании</h3>
                         <p class="company__text company__block-one-text">ООО «Биоинтех» под
                             руководством Панкова Юрия Геннадьевича: Компания создавалась
                             совместно с ПромБиоТехнологии во главе Лушникова Александра
@@ -22,7 +22,7 @@
                         <p class="company__text">Все три компании являются ключевым звеном создания новшеств в
                             пищевой и кормовой промышленности.</p>
                     </div>
-                    <div class="company__image"></div>
+                    <div class="company__image">фото компании, офиса</div>
                 </div>
             </div>
             <div class="company__line"></div>
@@ -57,28 +57,13 @@
                     пищевого и кормового произвоств.</p>
             </div>
         </div>
-        <!--<div class="navigation-container">
-            <div>
-                <div class="navigation-container__left-navigation">
-                    <navigation-button :color="active === 'one' ? 'bgColor' : ''" @action="active = 'one'">История создания и развития компании</navigation-button>
-                    <navigation-button :color="active === 'two' ? 'bgColor' : ''" @action="active = 'two'">Информация о сфере и направлении деятельности компании</navigation-button>
-                    <navigation-button :color="active === 'three' ? 'bgColor' : ''" @action="active = 'three'">Планы и задачи компании</navigation-button>
-                </div>
-                <div class="button"><a href="/products"><span class="button__container">Каталог</span></a></div>
-            </div>
-            <div class="navigation-container__right navigation-container-right">
-                <component :is="componentName"></component>
-            </div>
-        </div>-->
+
     </MainContainer>
 </template>
 
 <script>
   import MainContainer from "../components/MainContainer";
-  /*import NavigationButton from "../components/NavigationButton";
-  import History from "./company/History";
-  import Information from "./company/Information";
-  import Plans from "./company/Plans";*/
+
   export default{
     name: 'Company',
     data() {
@@ -87,22 +72,11 @@
       }
     },
     computed: {
-      componentName() {
-        if (this.active === 'one') {
-          return 'History'
-        }
-        else if (this.active === 'two') {
-          return 'Information'
-        }
-        return 'Plans'
-      }
+
     },
     components: {
       MainContainer,
-      /*NavigationButton,
-      History,
-      Information,
-      Plans,*/
+
     },
   }
 </script>
@@ -120,12 +94,25 @@
           font-size: 14px;
           margin-bottom: 20px;
       }
+      &__image {
+          width: 400px;
+          height: 300px;
+          background-color: #818CEB;
+          margin: 20px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
 
       &__wrapper {
           display: flex;
       }
       &__paragraph {
           flex-basis: 55%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
       }
 
       &__paragraph-title {

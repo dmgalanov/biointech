@@ -47,6 +47,7 @@ body {
     width: 280px;
     height: 80px;
     position: relative;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,8 +61,18 @@ body {
     font-size: 26px;
     line-height: 100%;
     letter-spacing: 3px;
+    box-shadow: 0 2px 0 #303555;
+    transition: background-color 0.5s ease 0s;
 
-    .button-text {
+    &:hover {
+      background-color: #5f68aa;
+    }
+    &:active {
+      top: 3px;
+      box-shadow: 0 0 0 #303555;
+    }
+
+    /*.button-text {
       background:linear-gradient($colorWhite, $colorWhite) 50% 100% no-repeat;
       background-size:0 2px;
       transition:background 250ms ease 0s;
@@ -71,7 +82,7 @@ body {
     &:hover .button-text {
       background-size:100% 2px;
 
-    }
+    }*/
   }
 
   .navigation-container-right-title {

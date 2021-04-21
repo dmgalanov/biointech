@@ -1,12 +1,15 @@
 <template>
     <MainContainer>
         <div class="products">
-            <products-item
-                v-for="product in products"
-                :key="product.article"
-                v-bind:product_data="product"
-                @sendArticle="sendChildArticle"
-            />
+            <h1 class="products__title">наша продукция</h1>
+            <div class="products__item">
+                <products-item
+                        v-for="product in products"
+                        :key="product.article"
+                        v-bind:product_data="product"
+                        @sendArticle="sendChildArticle"
+                />
+            </div>
         </div>
     </MainContainer>
 </template>
@@ -41,10 +44,18 @@
 
 <style lang="scss">
     .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 0;
+        padding: 40px 0;
+
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        &__item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
     }
 </style>
