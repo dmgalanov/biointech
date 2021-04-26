@@ -1,6 +1,15 @@
 .header {
   background: $colorWhite;
 
+  .phone-menu {
+    @include for-size(desktop) {
+      display: none;
+    }
+    @include for-size(tablet) {
+      display: none;
+    }
+  }
+
   &__top {
     padding: 23px 0;
     display: flex;
@@ -20,12 +29,57 @@
     color: $primary
   }
 
-  &__menu {
-    padding: 20px 0;
+  &__bg-color {
+    @include for-size(phone) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
   }
-  
+
+  &__menu {
+    @include for-size(desktop) {
+      padding: 20px 0;
+    }
+    @include for-size(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 20px;
+      position: relative;
+      width: 100%;
+      height: 60px;
+    }
+  }
+
   &__items {
     justify-content: space-around;
+
+    @include for-size(phone) {
+      align-self: flex-start;
+      background: #eee;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    @include for-size(phone) {
+      align-items: center;
+      color: #000;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 2em;
+      list-style-type: none;
+      transition: all .3s ease;
+    }
   }
 
 }

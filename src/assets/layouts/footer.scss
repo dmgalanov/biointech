@@ -1,9 +1,12 @@
 .footer {
-  padding: 60px 0;
+  padding: 50px 0;
+
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    @include for-size(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__nav {
@@ -19,6 +22,9 @@
   }
 
   &__contacts {
+    @include for-size (tablet) {
+      display: none;
+    }
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -31,6 +37,7 @@
   }
 
   .contacts {
+
     &__phone {
       font-weight: 600;
       font-size: 26px;

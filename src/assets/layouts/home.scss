@@ -22,9 +22,15 @@
     background: $bgColor;
     padding: 150px 0;
 
+    @include for-size (tablet) {
+      padding: 50px 0;
+    }
+
     &__container {
-      display: flex;
-      justify-content: space-between;
+      @include for-size (desktop) {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     &__title {
@@ -51,7 +57,17 @@
     }
 
     &__image {
-      margin-top: 50px;
+      @include for-size(desktop) {
+        max-width: 100%;
+        height: auto;
+        margin: 50px 0 0 30px;
+      }
+      @include for-size (tablet) {
+        display: none;
+      }
+      @include for-size (phone) {
+        display: none;
+      }
     }
   }
 

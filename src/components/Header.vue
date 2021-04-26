@@ -7,14 +7,20 @@
             </div>
         </div>
         <div class="header__bg-color bg-color">
-            <div class="header__menu menu container">
-                <ul class="header__items menu__items">
-                    <li class="menu__item" v-for="({name, path}, index) in headerMenuList" :key="index">
-                        <router-link class="menu__link" aria-current="page" :to="path">
-                            {{name}}
-                        </router-link>
-                    </li>
-                </ul>
+            <div class="header__menu main-menu container">
+                <transition class="phone-menu" name="fade" mode="out-in">
+                    <i class="material-icons menu" v-if="!show" @click="show = !show" key="menu">menu</i>
+                    <i class="material-icons clear" v-else @click="show = !show" key="clear">clear</i>
+                </transition>
+                <transition name="fade">
+                    <ul class="header__items main-menu__items" v-if="show">
+                        <li class="header__item main-menu__item" v-for="({name, path}, index) in headerMenuList" :key="index">
+                            <router-link class="main-menu__link" aria-current="page" :to="path">
+                                {{name}}
+                            </router-link>
+                        </li>
+                    </ul>
+                </transition>
             </div>
         </div>
     </header>
@@ -30,6 +36,7 @@
       data() {
         return {
           headerMenuList: menuList,
+          show: false,
         }
       },
     }

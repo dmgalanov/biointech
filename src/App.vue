@@ -1,11 +1,11 @@
 <template>
-  <div class="wrap d-flex flex-column min-vh-100">
+
     <Header />
-    <main class="flex-fill">
+    <main>
       <router-view/>
     </main>
     <Footer />
-  </div>
+
 </template>
 
 <script>

@@ -21,7 +21,7 @@ body {
     margin: 0 auto;
   }
 
-  .menu {
+  .main-menu {
     &__items {
       display: flex;
       margin: auto 0;
@@ -72,32 +72,6 @@ body {
       box-shadow: 0 0 0 #303555;
     }
 
-    /*.button-text {
-      background:linear-gradient($colorWhite, $colorWhite) 50% 100% no-repeat;
-      background-size:0 2px;
-      transition:background 250ms ease 0s;
-
-    }
-
-    &:hover .button-text {
-      background-size:100% 2px;
-
-    }*/
   }
 
-  .navigation-container-right-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 135.7%;
-    margin-bottom: 30px;
-  }
-
-  .navigation-container-right-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 135.7%;
-    margin-bottom: 25px;
-  }
 }
