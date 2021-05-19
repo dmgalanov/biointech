@@ -1,0 +1,27 @@
+.swiper-container {
+  max-width: 100%;
+}
+.swiper-slide {
+  display: flex;
+  max-height: 600px;
+  &__image {
+    margin: 0 auto;
+    max-width: 770px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.swiper-button-prev, .swiper-button-next {
+  color: #818CEB;
+  font-size: 100px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #818CEB;
+
+}

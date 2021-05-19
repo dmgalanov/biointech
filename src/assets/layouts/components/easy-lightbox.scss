@@ -1,0 +1,30 @@
+.light-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @include for-size (ewq) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include for-size (tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include for-size (phone) {
+    grid-template-columns: 1fr;
+  }
+
+}
+.light-box-button {
+  border: none;
+  background-color: #ffffff;
+}
+.light-box-image {
+  width: 250px;
+  transition: 0.5s;
+  margin: 0 5px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -2,8 +2,8 @@
   <div class="home">
     <section class="block-one">
       <MainContainer>
-        <h1 class="block-one__title">Высококлассное<br>промышленное<br>оборудование</h1>
-        <a href="/products" class="block-one__button button"><span class="button__text button-text">Каталог</span></a>
+        <h1 class="block-one__title">Высококлассное промышленное оборудование</h1>
+        <router-link to="/products" class="block-one__button button"><span class="button__text button-text">Каталог</span></router-link>
       </MainContainer>
     </section>
     <section class="block-two">
@@ -12,7 +12,7 @@
           <div class="block-two__info">
             <h3 class="block-two__title">ООО«БиоИнтех»</h3>
             <p class="block-two__text">Ведущие компании доверяют нам задачи по поставки промышленного оборудования и его установки. Надежные технологии резки, гибкие пакеты услуг и интеллектуальные программные решения позволяют нам устанавливать стандарты во всем мире.</p>
-            <a href="/services" class="block-two__button button"><span class="button__text button-text">Услуги</span></a>
+            <router-link to="/services" class="block-two__button button"><span class="button__text button-text">Услуги</span></router-link>
           </div>
           <div class="block-two__image">
             <img src="../assets/images/block-two__image.png" alt="">
@@ -44,13 +44,8 @@
     </section>
     <section class="block-four">
       <MainContainer>
-        <h3 class="block-four__title">Наши товары</h3>
-        <div class="block-four__carousel">
-          <v-carousel
-                  :carousel_data="sliderItems"
-          />
-        </div>
-        <a href="/products" class="block-four__look-all">Смотреть все</a>
+        <h3 class="block-four__title">Сертификаты</h3>
+        <EasyLightbox />
       </MainContainer>
     </section>
   </div>
@@ -59,25 +54,17 @@
 <script>
 // @ is an alias to /src
 import MainContainer from "../components/MainContainer";
-import vCarousel from '../components/v-carousel'
+import EasyLightbox from "../components/EasyLightbox";
 
 export default {
   name: 'Home',
   components: {
     MainContainer,
-    vCarousel
+    EasyLightbox
   },
 
   data() {
-    return {
-      sliderItems: [
-        {id:1, name: 'img1', img: '1.png'},
-        {id:2, name: 'img2', img: '2.png'},
-        {id:3, name: 'img3', img: '3.png'},
-        {id:4, name: 'img4', img: '4.png'},
-        {id:5, name: 'img5', img: '5.png'}
-      ]
-    }
+
   }
 }
 

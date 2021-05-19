@@ -1,16 +1,26 @@
 @mixin for-size($size) {
   @if $size == phone {
-    @media (min-width: 300px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       @content
     }
   }
   @else if $size == tablet {
-    @media (min-width: 767px) and (max-width: 1024px) {
+    @media (min-width: 767px) and (max-width: 992px) {
       @content
     }
   }
   @else if $size == desktop {
-    @media (min-width: 1024px) and (max-width: 1800px) {
+    @media (min-width: 992px) and (max-width: 2560px) {
+      @content
+    }
+  }
+  @else if $size == qwe {
+    @media (min-width: 320px) and (max-width: 992px) {
+      @content
+    }
+  }
+  @else if $size == ewq {
+    @media (min-width: 992px) and (max-width: 1200px) {
       @content
     }
   }

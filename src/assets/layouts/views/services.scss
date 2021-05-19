@@ -1,0 +1,53 @@
+.services {
+  padding: 40px 0 0px 0;
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__list {
+    font-size: 14px;
+    padding: 0;
+    margin: 10px 0 25px;
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  &__item {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      display: block;
+      background: #818CEB;
+      border-radius: 50%;
+      position: absolute;
+      top: 7px;
+      left: 0;
+    }
+  }
+
+  &__carousel {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

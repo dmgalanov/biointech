@@ -17,8 +17,8 @@
 <script>
     import MainContainer from "../components/MainContainer";
     import {productsList} from "../constants/productsItemDb";
-    import ProductsItem from "./products/ProductsItem";
-    /*import NavigationButton from "../components/NavigationButton";*/
+    import ProductsItem from "../components/ProductsItem";
+
     
     export default{
         name: 'Products',
@@ -41,21 +41,3 @@
         }
     }
 </script>
-
-<style lang="scss">
-    .products {
-        padding: 40px 0;
-
-        &__title {
-            font-size: 36px;
-            text-transform: uppercase;
-        }
-        &__item {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 0;
-        }
-    }
-</style>

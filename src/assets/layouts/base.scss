@@ -8,17 +8,16 @@ body {
     background: $bgColor;
   }
 
-  a {
-    text-decoration: none;
-    color: $colorWhite;
-
-    &:hover {
-      color: $colorWhite;
-    }
-  }
 
   h3 {
     margin: 0 auto;
+  }
+
+  .main-menu {
+    &__link {
+      text-decoration: none;
+      color: $colorWhite;
+    }
   }
 
   .main-menu {
@@ -39,6 +38,11 @@ body {
 
       &:hover {
         background-size:100% 2px;
+      }
+
+      @include for-size(phone) {
+        font-size: 28px;
+        margin: 5px 15px 15px 5px;
       }
     }
   }

@@ -22,7 +22,7 @@
                         <p class="company__text">Все три компании являются ключевым звеном создания новшеств в
                             пищевой и кормовой промышленности.</p>
                     </div>
-                    <div class="company__image">фото компании, офиса</div>
+                    <div class="company__image"><img src="../assets/images/office.jpg" alt=""></div>
                 </div>
             </div>
             <div class="company__line"></div>
@@ -80,77 +80,3 @@
     },
   }
 </script>
-
-<style lang="scss">
-  .company {
-      padding: 40px 0;
-
-      &__title {
-          font-size: 36px;
-          text-transform: uppercase;
-          margin-bottom: 30px;
-      }
-      &__text {
-          font-size: 14px;
-          margin-bottom: 20px;
-      }
-      &__image {
-          width: 400px;
-          height: 300px;
-          background-color: #818CEB;
-          margin: 20px 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-
-      &__wrapper {
-          display: flex;
-      }
-      &__paragraph {
-          flex-basis: 55%;
-          display: flex;
-          flex-direction: column;
-          align-items: start;
-          justify-content: start;
-      }
-
-      &__paragraph-title {
-          font-size: 18px;
-          text-transform: uppercase;
-          margin: 30px 0;
-      }
-
-      &__list {
-          font-size: 14px;
-          padding: 0;
-          margin: 25px 0;
-          list-style: none;
-          display: block;
-          padding-inline-start: 40px;
-      }
-      &__item {
-          padding-left: 20px;
-          margin-bottom: 5px;
-          position: relative;
-
-          &:before {
-              content: "";
-              width: 6px;
-              height: 6px;
-              display: block;
-              background: #818CEB;
-              border-radius: 50%;
-              position: absolute;
-              top: 7px;
-              left: 0;
-          }
-      }
-
-      &__line {
-          height: 2px;
-          background: radial-gradient(#818CEB, #FFFFFF);
-          margin: 10px 0;
-      }
-  }
-</style>

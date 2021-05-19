@@ -1,0 +1,60 @@
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+
+  @include for-size(tablet) {
+    flex-direction: column;
+  }
+
+  &__info {
+    flex-basis: 30%;
+  }
+  &__map {
+    flex-basis: 45%;
+    box-shadow: 0 0 8px 0 #818CEB;
+  }
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__bold-text {
+    font-weight: Bold;
+  }
+}
+
+.contacts-button {
+  width: 280px;
+  height: 60px;
+  margin: 40px 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #818CEB;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  box-shadow: 0 2px 0 #303555;
+  transition: background-color 0.5s ease 0s;
+  top: 0;
+
+  &:hover {
+    background-color: #5f68aa;
+  }
+  &:active {
+    top: 3px;
+    box-shadow: 0 0 0 #303555;
+  }
+}

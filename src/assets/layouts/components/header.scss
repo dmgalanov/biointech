@@ -1,0 +1,105 @@
+
+.header {
+  background: $colorWhite;
+
+
+  &__top {
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include for-size(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__phone {
+    color: $primary;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+
+    &:hover {
+      color: $bgColor;
+    }
+  }
+
+  &__button-form {
+    width: 240px;
+    height: 30px;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    color: $colorWhite;
+    background-color: $bgColor;
+    overflow: hidden;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 0 #303555;
+    transition: background-color 0.5s ease 0s;
+    top: 0;
+
+    &:hover {
+      background-color: #5f68aa;
+    }
+    &:active {
+      top: 3px;
+      box-shadow: 0 0 0 #303555;
+    }
+
+    @include for-size(desktop) {
+      margin: 0 50px 0 0;
+    }
+    @include for-size(qwe) {
+      margin: 10px 0 0 0;
+
+    }
+  }
+
+
+  &__bg-color {
+    @include for-size(phone) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    padding: 20px 0;
+
+    @include for-size(phone) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__items {
+    justify-content: space-between;
+
+    @include for-size(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__connection {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    @include for-size(qwe) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+
+}

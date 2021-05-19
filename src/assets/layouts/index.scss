@@ -3,6 +3,21 @@
 @import "./fonts.scss";
 @import "./colors.scss";
 @import "./base.scss";
-@import "./header.scss";
-@import "./footer.scss";
-@import "./home.scss";
+
+/*components*/
+
+
+@import "components/header";
+@import "components/footer";
+@import "components/easy-lightbox";
+@import "components/products-item";
+@import "components/swiper-slider";
+
+/*views*/
+
+@import "home";
+@import "views/company";
+@import "views/contacts";
+@import "views/products";
+@import "views/services";
+@import "views/work";
